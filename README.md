@@ -1,6 +1,6 @@
 # cas-unsupport-asset-github-action
 
-GitHub action that uses the **[cas](https://github.com/codenotary/cas)** tool to unsupport digital assets and SBOMS for docker images. 
+GitHub action that uses the **[cas](https://github.com/codenotary/cas)** tool to unsupport digital assets and docker images. 
 
 ## How to use it
 
