@@ -10,15 +10,11 @@ inputs:
   cas_api_key:
     description: 'API Key provided upon signing up through cas.codenotary.com'
     required: true
-  extra_flag:
-    required: false
-    default: ''
 runs:
   using: 'docker'
   image: 'docker://codenotary/cas:bom-docker'
   args:
     - unsupport
-    - ${{ inputs.extra_flag }}
     - ${{ inputs.asset }}
     - --api-key=${{ inputs.cas_api_key }}
     - --host=cas.codenotary.com
